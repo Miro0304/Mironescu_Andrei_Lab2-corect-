@@ -12,6 +12,21 @@
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="322*"/>
         </Grid.ColumnDefinitions>
+        <Menu x:Name="mnuMain" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top"
+Width="131" Margin="0,26,0,0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="_Doughnuts" Height="15" Width="91">
+                <MenuItem Header="Make">
+                    <MenuItem Header="Raised">
+                        <MenuItem x:Name="glazedMenuItem" Header="Glazed"/>
+                        <MenuItem x:Name="sugarMenuItem" Header="Sugar"/>
+                    </MenuItem>
+                    <MenuItem Header="Filled"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
         <Label x:Name="lblTiltle" Content="Doughnuts - Bake &amp; Sale" HorizontalAlignment="Left" Margin="98,47,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Grid.Column="2"/>
         <GroupBox x:Name="gbRaised" Header="Raised" Margin="53,75,457,168" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2">
             <Canvas>
